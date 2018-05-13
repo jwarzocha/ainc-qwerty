@@ -19,8 +19,8 @@ sleep 15
 sleep 15
 	start_time=`date +%s`
 	
-	#time ../../mongoimport --host rs0/$host1:27017,$host2:27018,$host3:27019 --db test --type csv  --collection londoncrimes1 --drop --file ../dane/london_crime_m.csv --headerline 
-	time mongoimport --host rs0/$host1:27017,$host2:27018,$host3:27019 --db test --type csv  --collection londoncrimes1 --drop --file ./london_crime_test.csv --headerline 
+	time mongoimport --host rs0/$host1:27017,$host2:27018,$host3:27019 --db test --type csv  --collection londoncrimes1 --drop --file ./london_crime_m.csv --headerline 
+	#time mongoimport --host rs0/$host1:27017,$host2:27018,$host3:27019 --db test --type csv  --collection londoncrimes1 --drop --file ./london_crime_test.csv --headerline 
 
 	end_time=`date +%s`
 	echo execution time was `expr $end_time - $start_time` s.
