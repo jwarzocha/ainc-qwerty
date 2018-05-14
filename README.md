@@ -60,6 +60,7 @@ Agregacja pipeline znajduje się w pliku agregation.js, a map reduce w pliku map
 ./agregacje.sh
 ```
 i otrzymać pomiary czasu.
+
 Agregacja pipeline:
 ```sh
 var asc = -1;
